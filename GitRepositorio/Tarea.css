@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #1C1823;
+    margin: 10;
+    padding: 10;
+}
+    /* Sección 1: Menú */
+.menu-nav {
+    background-color: #1C1823;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+}
+/*menu*/
+.menu {
+    
+    display: flex;
+    align-items: center;
+    background-color: #1C1823;
+    padding: 10px;
+    
+}
+.menu img {
+    width: 70px;
+    height: auto;
+    margin-right: 20px;
+    transition: transoform 0.3s ease; 
+}
+.menu ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+}
+.menu ul li {
+    position: relative;
+}
+.menu ul li a {
+    color: #F5F2FA;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+    /* Animacion 1: Desplazamiento hacia arriba */
+.menu ul li:hover {
+    transform: scale(1.2);
+    background-color: #2E293A;
+    border-radius: 5px;
+}
+/*Logo*/
+.menu img:hover {
+    transform: scale(1.2);
+}
+/* Seccion 2: Slider de fotos */
+.SliderP {
+    display: grid;
+    background-color: rgb(47, 202, 151);
+    height: 90px;
+}
+.Slider {
+    position: relative;
+    width: 100%;
+    max-height: 800px;
+    max-width: 100%;
+}
+.Slider img {
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.Mensaje{
+    font-family: fantasy;
+    font-size: 50px;
+    margin-bottom: 10px;
+    /* Permite superponer el contenido*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #00EAFF;
+    padding: 20px;
+}
+.slogan:hover{
+    transform: scale(1.5);
+    color: #7B1FA2;
+}
